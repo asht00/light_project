@@ -14,8 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         // Do any additional setup after loading the view.
-        
-    }
+        self.lightButton.layer.cornerRadius = 15
+        self.lightButton.layer.shadowColor = UIColor.black.cgColor
+        }
     var lighton = true
     
     func  updateUI(){
@@ -23,10 +24,14 @@ class ViewController: UIViewController {
         if lighton {
             view.backgroundColor = .white
             lightButton.setTitle("OFF", for: .normal)
+            lightButton.setTitleColor( .white, for: .normal)
+            lightButton.backgroundColor = .black
+        
         } else {
             view.backgroundColor = .black
             lightButton.setTitle("ON", for: .normal)
-            
+            lightButton.setTitleColor( .black, for: .normal)
+            lightButton.backgroundColor = .white
         }
         
     }
