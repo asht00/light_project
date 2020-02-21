@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-Wt-lUd">
-                                <rect key="frame" x="26" y="29" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL1-Wt-lUd">
+                                <rect key="frame" x="175" y="537" width="30" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="lightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZp-rs-iPU"/>
@@ -25,8 +24,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EL1-Wt-lUd" secondAttribute="trailing" constant="200" id="0YA-fW-rTA"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="3XA-hx-rLv"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="9Ip-bp-yHC"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="Ap5-Iz-5s1"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Dhz-c7-hYc"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="HKJ-I0-78e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EL1-Wt-lUd" secondAttribute="trailing" constant="160" id="HOw-qH-Jgp"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="Mjd-Jn-8i9"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="200" id="OEQ-jQ-ZXl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EL1-Wt-lUd" secondAttribute="trailing" constant="175" id="aHG-cx-ihE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EL1-Wt-lUd" secondAttribute="trailing" constant="170" id="cFn-OA-CQE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EL1-Wt-lUd" secondAttribute="bottom" constant="100" id="eii-Vl-wzc"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="180" id="kDX-LC-Thw"/>
+                            <constraint firstItem="EL1-Wt-lUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="wS2-Zj-D9P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lightButton" destination="EL1-Wt-lUd" id="JET-Oz-vOm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

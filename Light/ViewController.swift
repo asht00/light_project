@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         // Do any additional setup after loading the view.
+        
     }
     var lighton = true
     
@@ -21,13 +22,17 @@ class ViewController: UIViewController {
         //view.backgroundColor = lighton ? .white: .black
         if lighton {
             view.backgroundColor = .white
-            
+            lightButton.setTitle("OFF", for: .normal)
         } else {
             view.backgroundColor = .black
+            lightButton.setTitle("ON", for: .normal)
             
-        }    }
+        }
+        
+    }
 
-    @IBAction func lightButton(_ sender: UIButton) {
+    @IBOutlet weak var lightButton: UIButton!
+    @IBAction func lightButton(_ sender: AnyObject) {
         lighton = !lighton
         /*if lighton {
             view.backgroundColor = .white
@@ -35,6 +40,7 @@ class ViewController: UIViewController {
             view.backgroundColor = .black
         }*/
         updateUI()
+        //func setTitle(_ String: , for: UIControl.State)
     }
     
 }
